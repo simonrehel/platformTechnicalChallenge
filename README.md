@@ -12,4 +12,6 @@ Determining the number of threads to maximize memory use
 - Also, when loading the image, we make sure to reduce it to a predefined maximum dimension, so we can predict the additional memory needed for that
 - Therefore we can predict the number of parallel threads that could run safely at all time within the memory limitation
 
-Note that gray/white/black RGB values were discarded to get more meaningful results.
+Note 1: Gray/white/black RGB values were discarded to get more meaningful results.
+
+Note 2: There are duplicate URLs in the input file. If it's something that could really happen, we should improve the program so it keeps track of already processed URLs and does it only once.
